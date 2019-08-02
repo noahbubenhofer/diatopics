@@ -35,7 +35,7 @@ set PrintStructures "text_date";
 show -pos -word +lemma;
 
 [lemma="USA"]; 
-cat Last > "corpusfile.txt"; 
+cat Last > "inputfile.txt"; 
 ~~~~
 
 Hier werden anstelle der Wortformen die Lemmata (Grundformen) verwendet. Das kann natürlich angepasst werden, indem man z.B. nur die Wortformen berücksichtigt.
