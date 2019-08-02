@@ -27,7 +27,7 @@ Als Inputdaten dienen Korpusbelege, die im folgenden Format vorliegen müssen:
 
 ### Export aus CWB:
 
-Wenn die CWB (http://cwb.sourceforge.net) verwendet wird, können diese Belege so erzeugt werden:
+Wenn die CWB (http://cwb.sourceforge.net) verwendet wird, können diese Belege so erzeugt werden (vorausgesetzt, es gibt ein Metadatum "text_date"):
 
 ~~~~
 set Context 25 words;
@@ -35,8 +35,10 @@ set PrintStructures "text_date";
 show -pos -word +lemma;
 
 [lemma="USA"]; 
-cat Last > "spiegelprint_USA.txt"; 
+cat Last > "corpusfile.txt"; 
 ~~~~
+
+Hier werden anstelle der Wortformen die Lemmata (Grundformen) verwendet. Das kann natürlich angepasst werden, indem man z.B. nur die Wortformen berücksichtigt.
 
 ### Verarbeitung mit Mallet und R über sh-Script
 
